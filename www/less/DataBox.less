@@ -1,0 +1,131 @@
+.DataBox{
+  width: 100%;
+
+  table{
+    position: relative;
+    width: 99%;
+    box-shadow: 2px 3px 15px 2px #00000096;
+
+    thead>tr{
+      background-color: #B3E5FC;
+    }
+
+    tbody>tr:nth-child(2n){
+      background-color: #B3E5FC;
+      cursor: pointer;
+    }
+
+    tbody>tr:nth-child(2n+1){
+      background-color: #EEEEEE;
+      cursor: pointer;
+    }
+  }
+
+  #projectDetail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 2000;
+
+    .innerProjectDetailCentralize{
+      float: left;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      max-width: 80%;
+      width: 100%;
+
+      .innerProjectDetail {
+        background-color: #fff;
+        position: relative;
+        left: -50%;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.SetTableBox{
+  //position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background-color: rgba(0,0,0,.7);
+  //z-index: 1112;
+
+  @h : 200px;
+  @w : 600px;
+  .innerBox{
+    width:@w ;
+    height:@h;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: @w / -2;
+    margin-top: @h / -2;
+
+    padding: 10px;
+
+    .closebtn{
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background-color: orange;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .labelbox{
+      label{
+        margin: 3px 5px;
+      }
+    }
+
+    .btnbox{
+      margin: 10px;
+
+      input {
+        margin: 3px;
+      }
+
+      .submit{
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .DataBox {
+
+    table {
+      font-size: .6rem;
+
+      .dataTh, .dataTd {
+        padding: .25rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .DataBox {
+
+    table {
+      font-size: .8rem;
+
+      .dataTh, .dataTd {
+        padding: .25rem;
+      }
+    }
+  }
+}

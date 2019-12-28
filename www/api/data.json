@@ -1,0 +1,104 @@
+﻿[
+	{
+		"NAME" : "王**",
+		"SCHOOL" : "爱前端",
+		"TARGET" : 10000,
+		"DONE" : 2000,
+		"NEED" : 8000,
+		"MIN_INVEST" : 50,
+		"MAX_INVEST" : 8000,
+		"TYPE" : "6+2B",
+		"RETURN_RATE" : "11.17",
+		"CREDIT" : 6,
+		"fundraising_deadline" : "2017-05-01",
+		"EARNING_TIME" : "20170-10-27",
+		"number_of_people":2,
+		"investor" : [
+			{
+				"name" : "shao****" ,
+				"money" : 1500,
+				"anticipated" : 276,
+				"time" : "2017年4月25日14:48:36"
+			},
+			{
+				"name" : "shao****" ,
+				"money" : 500,
+				"anticipated" : 76,
+				"time" : "2017年4月25日14:48:36"
+			}
+		],
+		"PROVINCE" : "北京",
+		"education" : "高中/中专",
+		"course_title": "前端大师班",
+		"course_time" : "2017-04-25",
+		"course_price" : 10000
+	},
+	{
+		"NAME" : "王**",
+		"SCHOOL" : "爱前端",
+		"TARGET" : 10000,
+		"DONE" : 2000,
+		"NEED" : 8000,
+		"MIN_INVEST" : 50,
+		"MAX_INVEST" : 8000,
+		"TYPE" : "6+2B",
+		"RETURN_RATE" : "11.17",
+		"CREDIT" : 6,
+		"fundraising_deadline" : "2017-05-01",
+		"EARNING_TIME" : "20170-10-27",
+		"number_of_people":2,
+		"investor" : [
+			{
+				"name" : "shao****" ,
+				"money" : 1500,
+				"anticipated" : 276,
+				"time" : "2017年4月25日14:48:36"
+			},
+			{
+				"name" : "shao****" ,
+				"money" : 500,
+				"anticipated" : 76,
+				"time" : "2017年4月25日14:48:36"
+			}
+		],
+		"PROVINCE" : "北京",
+		"education" : "高中/中专",
+		"course_title": "前端大师班",
+		"course_time" : "2017-04-25",
+		"course_price" : 10000
+	},
+	{
+		"NAME" : "王**",
+		"SCHOOL" : "爱前端",
+		"TARGET" : 10000,
+		"DONE" : 2000,
+		"NEED" : 8000,
+		"MIN_INVEST" : 50,
+		"MAX_INVEST" : 8000,
+		"TYPE" : "6+2B",
+		"RETURN_RATE" : "11.17",
+		"CREDIT" : 6,
+		"fundraising_deadline" : "2017-05-01",
+		"EARNING_TIME" : "20170-10-27",
+		"number_of_people":2,
+		"investor" : [
+			{
+				"name" : "shao****" ,
+				"money" : 1500,
+				"anticipated" : 276,
+				"time" : "2017年4月25日14:48:36"
+			},
+			{
+				"name" : "shao****" ,
+				"money" : 500,
+				"anticipated" : 76,
+				"time" : "2017年4月25日14:48:36"
+			}
+		],
+		"PROVINCE" : "北京",
+		"education" : "高中/中专",
+		"course_title": "前端大师班",
+		"course_time" : "2017-04-25",
+		"course_price" : 10000
+	}
+]

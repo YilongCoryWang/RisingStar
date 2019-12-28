@@ -1,0 +1,1 @@
+.fade-appear,.fade-enter{opacity:0}.fade-appear-active,.fade-enter-active{opacity:1;transition:opacity 3s ease-in}.fade-enter-done,.fade-exit{opacity:1}.fade-exit-active{opacity:0;transition:opacity 3s ease-in}.fade-exit-done,.fadeRtg-appear,.fadeRtg-enter{opacity:0}.fadeRtg-appear-active,.fadeRtg-enter-active{opacity:1;transition:opacity 1s ease-in}.fadeRtg-enter-done{opacity:1}

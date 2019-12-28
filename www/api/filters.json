@@ -1,0 +1,13 @@
+{
+    "Schools" : ["UTS" , "USYD" , "UNSW" , "MU"],
+    "Types"  : ["3 + 0B" , "6+2B" , "12+2B" , "18+2B" , "24+2B"],
+    "Need" : {"min" : 0 , "max" : 54000},
+    "Duration" : {
+        "year_start" : 0,
+        "month_start" : 0,
+        "day_start" : 0,
+        "year_end" : 0,
+        "month_end" : 0,
+        "day_end" : 0
+    }
+}

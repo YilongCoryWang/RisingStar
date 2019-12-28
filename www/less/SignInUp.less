@@ -1,0 +1,627 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-weight-big: 900;
+@font-weight-small: 800;
+#signInUpContainer{
+  height: 80vh;
+  min-height: 250px;
+  width: 100%;
+  background-image: url(../pic/SignInUp.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  overflow-y: hidden;
+
+  .signInUpPanel{
+    position: relative;
+    left: 0; right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    height: 430px;
+    width: 70%;
+    opacity: 0.9;
+    background-color: white;
+
+    .slidingPanelRight{
+      right: 50px !important;
+    }
+    .slidingPanel{
+      height: 390px;
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      right: calc(50% - 50px);
+      transform: translateY(-50%);
+      background-color: #1b6d85;
+      text-align: center;
+      box-shadow: 0 0 15px 9px #00000096;
+      transition: 0.3s ease-in-out;
+
+      .signInPanel{
+        display: block;
+
+        .signInPanelTitle{
+          font-size: 3rem;
+          margin: 2.5rem auto;
+          font-weight: @font-weight-big;
+        }
+
+        .signInPanelUserContainer, .signInPanelPasswordContainer{
+          margin: 1rem auto;
+        }
+
+        .signInPanelUserTypeContainer{
+          font-weight: @font-weight-big;
+          .userTypeLabel{
+            margin: 0 0 0 0.5rem;
+            .userTypeInput{
+              margin: 0 0.3rem;
+            }
+          }
+        }
+
+        .signInPanelUser, .signInPanelPassword{
+          font-size: 1.1rem;
+          padding-left: 5px;
+        }
+
+        .signInButton{
+          margin: 2.3rem;
+          width: 6rem;
+          padding: 0.5rem 1rem;
+          background-color: #FFC312;
+          border-radius: 7px;
+          color: black;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+          border-color: #FFC312;
+          border-style: solid;
+          font-weight: @font-weight-small;
+        }
+        .signInButton:hover{
+          cursor: pointer;
+          border-color: white;
+          background-color: white;
+        }
+      }
+
+      .signUpPanel{
+        display: none;
+
+        .signUpPanelTitle{
+          font-size: 3rem;
+          margin: 1rem auto;
+          font-weight: @font-weight-big;
+        }
+
+        .signUpPanelUserContainer, .signUpPanelPasswordContainer{
+          margin: 1rem auto;
+        }
+
+        .signUpPanelUserTypeContainer{
+          font-weight: @font-weight-big;
+          .userTypeLabel{
+            margin: 0 0 0 0.5rem;
+            .userTypeInput{
+              margin: 0 0.3rem;
+            }
+          }
+        }
+
+        .signUpPanelUser, .signUpPanelPassword{
+          font-size: 1.1rem;
+          padding-left: 5px;
+        }
+
+        .signUpButton{
+          margin: 1rem;
+          width: 6rem;
+          padding: 0.5rem 1rem;
+          background-color: #FFC312;
+          border-radius: 7px;
+          color: black;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+          border-color: #FFC312;
+          border-style: solid;
+          cursor: pointer;
+          font-weight: @font-weight-small;
+        }
+        .signUpButton:hover{
+          border-color: white;
+          background-color: white;
+        }
+      }
+    }
+
+    .signUpInfoPanel{
+      display: block;
+      position: absolute;
+      right: 5%;
+      width: 30%;
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem;
+
+      .signUpInfoPanelPrompt{
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 2rem auto;
+      }
+
+      .signUpInfoPanelSignUpButton{
+        width: 9rem;
+        height: 2rem;
+        border: 1px solid silver;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: silver;
+        cursor: pointer;
+      }
+    }
+
+    .signInInfoPanel{
+      display: none;
+      position: absolute;
+      left: 5%;
+      width: 30%;
+      text-align: center;
+      padding-top: 4rem;
+      font-size: 2rem;
+
+      .signInInfoPanelPrompt{
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 3rem auto;
+      }
+
+      .signInInfoPanelSignUpButton{
+        width: 9rem;
+        height: 2rem;
+        border: 1px solid silver;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: silver;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* Media Queries: */
+@media screen and (max-width: 767px){
+  #signInUpContainer{
+    height: 50vh;
+    margin-bottom: 3vh;
+
+    .signInUpPanel{
+      .slidingPanelRight{
+        right: 35px !important;
+      }
+      .slidingPanel{
+        height: 245px;
+        right: calc(50% - 35px);
+
+        .signInPanel {
+          .signInPanelTitle {
+            font-size: 2rem;
+            margin: .5rem auto;
+          }
+
+          .signInPanelUser, .signInPanelPassword{
+            font-size: 0.8rem;
+          }
+
+          .signInButton{
+            margin: 0.5rem;
+            width: 4rem;
+            padding: .1rem .4rem;
+            font-size: .8rem;
+            line-height: 1rem;
+          }
+        }
+
+        .signUpPanel {
+          .signUpPanelTitle {
+            font-size: 2rem;
+            margin: 0 auto;
+          }
+
+          .signUpPanelUserContainer, .signUpPanelPasswordContainer{
+            margin: 0.5rem auto;
+
+            .signUpPanelUser, .signUpPanelPassword{
+              font-size: 0.8rem;
+            }
+          }
+
+          .signUpButton{
+            margin: 0.5rem;
+            width: 4rem;
+            padding: .1rem .4rem;
+            font-size: .8rem;
+            line-height: 1rem;
+          }
+        }
+      }
+
+      .signUpInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 6rem;
+
+        .signUpInfoPanelPrompt{
+          font-size: 0.8rem;
+        }
+
+        .signUpInfoPanelSignUpButton{
+          width: 5rem;
+        }
+      }
+
+      .signInInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 6rem;
+
+        .signInInfoPanelPrompt{
+          font-size: 0.8rem;
+          margin: 2rem auto;
+        }
+
+        .signInInfoPanelSignUpButton{
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 451px){
+  #signInUpContainer{
+    .signInUpPanel{
+
+      .slidingPanelRight{
+        right: 20px !important;
+      }
+      .slidingPanel{
+        width: 60%;
+        right: calc(50% - 47px);
+
+        .signInPanel {
+          .signInPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signInPanelUser, .signInPanelPassword{
+            font-size: 0.8rem;
+          }
+
+          .signInButton{
+            margin: 0.9rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+
+        .signUpPanel {
+          .signUpPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signUpPanelUserContainer, .signUpPanelPasswordContainer{
+            .signUpPanelUser, .signUpPanelPassword{
+              font-size: 0.6rem;
+            }
+          }
+
+          .signUpButton{
+            margin: 0.5rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+      }
+
+      .signUpInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+
+        .signUpInfoPanelPrompt{
+          font-size: 0.6rem;
+        }
+
+        .signUpInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+
+      .signInInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 6rem;
+
+        .signInInfoPanelPrompt{
+          font-size: 0.6rem;
+          margin: 2rem auto;
+        }
+
+        .signInInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 451px){
+  #signInUpContainer{
+    .signInUpPanel{
+
+      .slidingPanelRight{
+        right: 20px !important;
+      }
+      .slidingPanel{
+        width: 60%;
+        right: calc(50% - 47px);
+
+        .signInPanel {
+          .signInPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signInPanelUser, .signInPanelPassword{
+            font-size: 0.8rem;
+          }
+
+          .signInButton{
+            margin: 0.9rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+
+        .signUpPanel {
+          .signUpPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signUpPanelUserContainer, .signUpPanelPasswordContainer{
+            .signUpPanelUser, .signUpPanelPassword{
+              font-size: 0.8rem;
+            }
+          }
+
+          .signUpButton{
+            margin: 0.5rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+      }
+
+      .signUpInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+
+        .signUpInfoPanelPrompt{
+          font-size: 0.6rem;
+        }
+
+        .signUpInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+
+      .signInInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 6rem;
+
+        .signInInfoPanelPrompt{
+          font-size: 0.6rem;
+          margin: 2rem auto;
+        }
+
+        .signInInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px){
+  #signInUpContainer{
+    .signInUpPanel{
+
+      .slidingPanelRight{
+        right: 10px !important;
+      }
+      .slidingPanel{
+        width: 60%;
+        right: calc(50% - 47px);
+
+        .signInPanel {
+          .signInPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signInPanelUser, .signInPanelPassword{
+            font-size: 0.7rem;
+          }
+
+          .signInButton{
+            margin: 0.9rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+
+        .signUpPanel {
+          .signUpPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signUpPanelUserContainer, .signUpPanelPasswordContainer{
+            .signUpPanelUser, .signUpPanelPassword{
+              font-size: 0.7rem;
+            }
+          }
+
+          .signUpButton{
+            margin: 0.5rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+      }
+
+      .signUpInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+
+        .signUpInfoPanelPrompt{
+          font-size: 0.6rem;
+        }
+
+        .signUpInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+
+      .signInInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 6rem;
+
+        .signInInfoPanelPrompt{
+          font-size: 0.6rem;
+          margin: 2rem auto;
+        }
+
+        .signInInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 349px){
+  #signInUpContainer{
+    .signInUpPanel{
+
+      .slidingPanelRight{
+        right: 2px !important;
+      }
+      .slidingPanel{
+        width: 60%;
+        right: calc(50% - 32px);
+
+        .signInPanel {
+          .signInPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signInPanelUser, .signInPanelPassword{
+            font-size: 0.6rem;
+          }
+
+          .signInButton{
+            margin: 0.9rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+
+        .signUpPanel {
+          .signUpPanelTitle {
+            font-size: 1.5rem;
+          }
+
+          .signUpPanelUserContainer, .signUpPanelPasswordContainer{
+            .signUpPanelUser, .signUpPanelPassword{
+              font-size: 0.6rem;
+            }
+          }
+
+          .signUpButton{
+            margin: 0.5rem auto;
+            width: 4rem;
+            padding: .2rem 0.6rem;
+            font-size: .8rem;
+          }
+        }
+      }
+
+      .signUpInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+
+        .signUpInfoPanelPrompt{
+          font-size: 0.6rem;
+        }
+
+        .signUpInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+
+      .signInInfoPanel{
+        width: 24%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 6rem;
+
+        .signInInfoPanelPrompt{
+          font-size: 0.6rem;
+          margin: 2rem auto;
+        }
+
+        .signInInfoPanelSignUpButton{
+          width: 3rem;
+          font-size: 0.5rem;
+          height: 1.3rem;
+        }
+      }
+    }
+  }
+}

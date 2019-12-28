@@ -1,0 +1,74 @@
+@filter-height: 40px;
+.FilterBar{
+  height: @filter-height;
+
+  .filterOptions {
+    .filterCheckBox {
+      margin-left: 0.3rem;
+    }
+  }
+
+  a, label{
+    margin-right: 18px;
+  }
+
+  li{
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #EEEEEE;
+    padding: 0px 5px;
+  }
+
+  .btn{
+    margin: 5px;
+  }
+}
+
+
+@media screen and (max-width: 991px){
+  #invest_container{
+    .FilterBar {
+      .FilterTitle{
+        font-size: 0.77rem;
+      }
+      .filterOptions{
+        font-size: 0.8rem;
+
+        .filterBtn{
+          width: 3.2rem;
+          font-size: 0.5rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  #invest_container{
+    .FilterBar {
+      .FilterTitle{
+        font-size: 0.5rem;
+      }
+
+      .filterOptions{
+        font-size: 0.7rem;
+
+        .filterBtn{
+          width: 3.2rem;
+          font-size: 0.5rem;
+          padding: 0;
+          margin-top: -0.1rem;
+        }
+      }
+
+      .submitRange{
+        top: 1rem;
+        position: relative;
+        width: 3.2rem;
+        font-size: .7rem;
+      }
+    }
+  }
+}

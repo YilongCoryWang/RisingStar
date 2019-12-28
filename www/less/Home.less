@@ -1,0 +1,91 @@
+@carousel-width : 100%;
+@carouselItem-width : 100%;
+#HomeCarousel{
+  padding-top: 4em;
+  margin: 0 auto;
+  .carousel-inner{
+    margin: 0 auto;
+    width: @carousel-width;
+    .carousel-item{
+      width: @carouselItem-width;
+      height: 100%;
+      img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@filter-width : 23%;
+@filter-margin : 1%;
+#filters{
+  margin-bottom: 2em;
+  div.title{
+    margin: 40px auto 10px;
+  }
+
+  li{
+    position: relative;
+    float: left;
+    width: @filter-width;
+    margin: @filter-margin;
+    list-style-type: none;
+    box-shadow: none;
+
+    & img{
+      width: 100%;
+    }
+  }
+
+  li:hover{
+    top: -3px;
+    left: -3px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, .2);
+    border-color: #eee;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+  }
+
+  #SmallCarousel{
+    display: none;
+  }
+}
+
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* Media Queries: */
+@media screen and (max-width: 768px){
+  #filters{
+    font-size: 90%;
+    li{
+      width: 48%;
+    }
+  }
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 414px){
+  #filters {
+    ul {
+      font-size: 80%;
+
+      li {
+        margin: 2%;
+        width: 96%;
+      }
+      display: none;
+    }
+
+    #SmallCarousel{
+      display: block;
+    }
+  }
+}

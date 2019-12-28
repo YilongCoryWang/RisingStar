@@ -1,0 +1,10 @@
+1. Get rid of key "\";
+2. Get rid of key "results :";
+3. Get rid of "" around array
+4. Get rid of key "{}";
+5. make sure the syntex as :
+   [
+     {},
+     {}
+   ]
+6. mongoimport --db "P2P" --collection "investments" --type json --file "database.json" --jsonArray

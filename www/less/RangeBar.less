@@ -1,0 +1,84 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+@pin_offset: 15px;
+.RangeBar{
+  height: 60px;
+  margin: 30px 0px;
+  box-sizing: content-box;
+  position: relative;
+  float: left;
+  font-size: 0.8rem;
+
+  .bar{
+    height: 10px;
+    margin: 0px 20px;
+    background-color: skyblue;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    border-radius: 3px;
+
+    .rangeSpan{
+      position: absolute;
+      height:10px;
+      background: #03A9F4;
+      border-radius: 3px;
+    }
+
+    b.pin_left{
+      position: absolute;
+      top: -@pin_offset;
+      height: @pin_offset;
+      width: 3px;
+      background-color: green;
+
+      u{
+        position: absolute;
+        top: -16px;
+        background-color: green;
+      }
+    }
+
+    b.pin_right{
+      position: absolute;
+      top: -@pin_offset;
+      height: @pin_offset;
+      width: 3px;
+      background-color: red;
+
+      u{
+        position: absolute;
+        top: -16px;
+        background-color: red;
+      }
+    }
+  }
+
+  .scale{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    i{
+      float: left;
+      height: 10px;
+      width: 1px;
+      background-color: black;
+
+      &.big{
+        height:16px;
+        position: relative;
+        background-color: black;
+
+        u{
+          position: absolute;
+          top: 11px;
+          left: -9px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

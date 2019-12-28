@@ -1,0 +1,34 @@
+﻿{
+	"name" : "王**",
+	"school" : "爱前端",
+	"target" : 10000,
+	"done" : 2000,
+	"need" : 8000,
+	"min" : 50,
+	"max" : 8000,
+	"type" : "6+2B",
+	"rate" : "11.17",
+	"credit" : 6,
+	"fundraising_deadline" : "2017-05-01",
+	"earnings_time" : "20170-10-27",
+	"number_of_people":2,
+	"investor" : [
+		{
+			"name" : "shao****" ,
+			"money" : 1500,
+			"anticipated" : 276,
+			"time" : "2017年4月25日14:48:36"
+		},
+		{
+			"name" : "shao****" ,
+			"money" : 500,
+			"anticipated" : 76,
+			"time" : "2017年4月25日14:48:36"
+		}
+	],
+	"province" : "北京",
+	"education" : "高中/中专",
+	"course_title": "前端大师班",
+	"course_time" : "2017-04-25",
+	"course_price" : 10000
+}
